@@ -3,7 +3,7 @@ LABEL maintainer="r0binak"
 
 EXPOSE 7681
 
-WORKDIR /proc/self/fd/7
+WORKDIR /proc/self/fd/8
 
 RUN apt-get update && DEBIAN_FRONTEND=noninteractive apt-get install -y \
         curl \
