@@ -1,7 +1,7 @@
 FROM docker.io/tsl0922/ttyd:latest
 LABEL maintainer="r0binak"
 
-EXPOSE 7681
+EXPOSE 7681 
 
 WORKDIR /var/run/
 
